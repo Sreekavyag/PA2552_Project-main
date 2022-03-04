@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="se.bth.pa2552_project.MainScreenController" styleClass="panel">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="errorText" styleClass="text-danger"/>
+
+    <GridPane alignment="CENTER" hgap="10" vgap="10">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="h4">Fahrenheit</Label>
+        <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="fahrenheitInput" styleClass="btn"/>
+        <Button GridPane.rowIndex="0" GridPane.columnIndex="2" fx:id="temperatureConvert" onAction="#onTemperatureConvert" text="Convert" styleClass="btn-primary" />
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="3" styleClass="h4">= Celsius:</Label>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="4" fx:id="celsiusOutput" styleClass="h5" minWidth="50">
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+            </padding>
+        </Label>
+
+
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="h4">m/s</Label>
+        <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="mpsInput" styleClass="btn"/>
+        <Button GridPane.rowIndex="1" GridPane.columnIndex="2" fx:id="speedConvert" onAction="#onSpeedConvert" styleClass="btn-primary">Convert</Button>
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="3" styleClass="h4">km/h</Label>
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="4" fx:id="kmhOutput" styleClass="h5" minWidth="50">
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+            </padding>
+        </Label>
+
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="h4">Minutes</Label>
+        <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="minuteInput" styleClass="btn"/>
+        <Button GridPane.rowIndex="2" GridPane.columnIndex="2" fx:id="timeConvert" onAction="#onTimeConvert" styleClass="btn-primary">Convert</Button>
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="3" styleClass="h4">Hours</Label>
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="4" fx:id="hourOutput" styleClass="h5" minWidth="50">
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+            </padding>
+        </Label>
+
+        <Label GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="h4">Gallons</Label>
+        <TextField GridPane.rowIndex="3" GridPane.columnIndex="1" fx:id="gallonInput" styleClass="btn"/>
+        <Button GridPane.rowIndex="3" GridPane.columnIndex="2" fx:id="volumeConvert" onAction="#onVolumeConvert" styleClass="btn-primary">Convert</Button>
+        <Label GridPane.rowIndex="3" GridPane.columnIndex="3" styleClass="h4">Liters</Label>
+        <Label GridPane.rowIndex="3" GridPane.columnIndex="4" fx:id="litersOutput" styleClass="h5" minWidth="50">
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+            </padding>
+        </Label>
+
+        <Label GridPane.rowIndex="4" GridPane.columnIndex="0" styleClass="h4">Grams</Label>
+        <TextField GridPane.rowIndex="4" GridPane.columnIndex="1" fx:id="gramsInput" styleClass="btn"/>
+        <Button GridPane.rowIndex="4" GridPane.columnIndex="2" fx:id="weightConvert" onAction="#onWeightConvert" styleClass="btn-primary">Convert</Button>
+        <Label GridPane.rowIndex="4" GridPane.columnIndex="3" styleClass="h4">Ounces</Label>
+        <Label GridPane.rowIndex="4" GridPane.columnIndex="4" fx:id="ouncesOutput" styleClass="h5" minWidth="50">
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+            </padding>
+        </Label>
+    </GridPane>
+</VBox>
